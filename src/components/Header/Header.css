@@ -1,0 +1,270 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  position: fixed;
+  background-color: white;
+  width: 95%;
+  z-index: 99999;
+}
+header .left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .left a {
+  display: flex;
+  gap: 30px;
+}
+header .left img {
+  width: 40px;
+}
+header .left h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #413566;
+}
+header .left h2 span {
+  font-weight: 600;
+  color: #ff5033;
+}
+header .right .ham,
+header .right .close,
+header .right .menuLogo,
+header .open .ham,
+header .open .close,
+header .open .menuLogo {
+  display: none;
+}
+header .right nav,
+header .open nav {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+header .right nav ul,
+header .open nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header .right nav ul a li,
+header .open nav ul a li {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  transition: all ease-in 0.2s;
+}
+header .right nav ul a li:hover,
+header .open nav ul a li:hover {
+  color: #ff5033;
+  border-bottom: 1px solid #ff5033;
+}
+header .right nav .btns,
+header .open nav .btns {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+header .right nav .btns button,
+header .open nav .btns button {
+  width: 200px;
+  padding: 5px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff5033;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all ease-in 0.2s;
+}
+header .right nav .btns button:hover,
+header .open nav .btns button:hover {
+  background-color: #e64023;
+}
+header .right nav .btns .langs,
+header .open nav .btns .langs {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+}
+header .right nav .btns .langs .customSelect,
+header .open nav .btns .langs .customSelect {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .right nav .btns .langs .customSelect .lng,
+header .open nav .btns .langs .customSelect .lng {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+}
+header .right nav .btns .langs .customSelect .lng img,
+header .open nav .btns .langs .customSelect .lng img {
+  width: 20px;
+}
+header .right nav .btns .langs .customSelect .lng p,
+header .open nav .btns .langs .customSelect .lng p {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+header .right nav .btns .langs .customSelect .globe,
+header .open nav .btns .langs .customSelect .globe {
+  width: 25px;
+  height: 25px;
+}
+header .right nav .btns .langs .customSelect ul,
+header .open nav .btns .langs .customSelect ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px 0;
+  border-radius: 10px;
+  gap: 10px !important;
+  right: -15%;
+  top: 170%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+header .right nav .btns .langs .customSelect ul li,
+header .open nav .btns .langs .customSelect ul li {
+  width: 100%;
+}
+header .right nav .btns .langs .customSelect ul li button,
+header .open nav .btns .langs .customSelect ul li button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 0;
+  color: #413566;
+  background-color: white !important;
+  transition: background-color 0.2s ease-in;
+}
+header .right nav .btns .langs .customSelect ul li button:hover,
+header .open nav .btns .langs .customSelect ul li button:hover {
+  background-color: rgb(235, 230, 230) !important;
+}
+header .right nav .btns .langs .customSelect ul li button img,
+header .open nav .btns .langs .customSelect ul li button img {
+  width: 20px;
+}
+header .right nav .btns .langs .customSelect ul li button p,
+header .open nav .btns .langs .customSelect ul li button p {
+  font-size: 14px;
+  font-weight: 400;
+}
+header .right nav .btns .langs .customSelect .langUl,
+header .open nav .btns .langs .customSelect .langUl {
+  display: none;
+}
+header .right nav .btns .langs .customSelect .openlangUl,
+header .open nav .btns .langs .customSelect .openlangUl {
+  display: block !important;
+}
+header .notOpen {
+  right: -300px;
+  display: none;
+}
+header .notOpen .ham,
+header .notOpen .close,
+header .notOpen .menuLogo {
+  display: none;
+}
+header .open {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  z-index: 9999;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  box-shadow: rgba(0, 0, 0, 0.15) -7px 16px 4px 2px;
+  transition: right 0.3s ease;
+}
+header .open .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+header .open .top h2 {
+  display: block;
+  font-size: 26px;
+  font-weight: 600;
+  color: #413566;
+}
+header .open .top h2 span {
+  font-weight: 600;
+  color: #ff5033;
+}
+header .open .top img {
+  display: block;
+  width: 20px;
+}
+header .open nav {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100vh;
+}
+header .open nav ul {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.active {
+  border-bottom: 1px solid #ff5033;
+}
+.active li {
+  color: #ff5033 !important;
+}
+
+.scrolled {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (width <= 440px) {
+  .langs .customSelect ul {
+    left: 200% !important;
+    top: -280px;
+  }
+  .notOpen {
+    right: -300px;
+    display: block !important;
+  }
+  header .right .ham {
+    display: block;
+  }
+  header nav {
+    display: none !important;
+  }
+  header .open nav .btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+  }
+  header .open nav .btns .langs {
+    width: 85%;
+    background-color: white;
+  }
+  header .open nav .btns a {
+    width: 100%;
+  }
+  header .open nav .btns a button {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Header.css.map */
